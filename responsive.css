@@ -1,0 +1,121 @@
+/* Responsive Navbar */
+@media (max-width: 992px) {
+    .navbar-custom {
+      height: auto; /* Menyesuaikan tinggi navbar */
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-toggler {
+      border-color: #6D4C6C;
+    }
+  
+    .navbar-collapse {
+      text-align: center;
+      padding-top: 1rem;
+    }
+  
+    .nav-link {
+      padding: 1rem 0; /* Memberikan ruang tambahan antara navbar link */
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  
+    .nav-item {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  }
+  
+  /* Hero Section */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 300px; /* Mengatur tinggi gambar pada mobile */
+      object-fit: cover;
+    }
+  
+    .carousel-caption h1 {
+      font-size: 1.5rem;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1rem;
+    }
+  
+    .carousel-caption .btn-order {
+      padding: 8px 20px;
+      font-size: 1rem;
+    }
+  
+    .carousel-indicators button {
+      background-color: #6D4C6C;
+    }
+  }
+  
+  /* Product Section */
+  @media (max-width: 768px) {
+    .product-section {
+      padding: 2rem 1rem;
+    }
+  
+    .feature-title {
+      font-size: 1.5rem;
+    }
+  
+    .feature p {
+      font-size: 1rem;
+    }
+  
+    .feature-icon {
+      font-size: 3rem; /* Menyesuaikan ukuran ikon untuk mobile */
+    }
+  
+    .custom-divider {
+      font-size: 1.2rem; /* Menyesuaikan ukuran bintang */
+    }
+  }
+  
+  /* For smaller screens and mobile */
+  @media (max-width: 576px) {
+    .product-section .row-cols-lg-3 {
+      row-gap: 2rem; /* Menambah jarak antara kolom pada layar kecil */
+    }
+  
+    .feature-title {
+      font-size: 1.3rem;
+    }
+  
+    .feature-icon img {
+      width: 40px; /* Menyesuaikan ukuran gambar pada fitur */
+      height: 40px;
+    }
+  
+    .btn-order {
+      font-size: 0.9rem;
+      padding: 6px 16px;
+    }
+  
+    footer {
+      padding: 2rem 1rem;
+    }
+  
+    footer .container {
+      text-align: center;
+    }
+  
+    .footer-bottom {
+      font-size: 0.9rem;
+    }
+  
+    .text-uppercase {
+      font-size: 2rem; /* Menyesuaikan ukuran font untuk footer */
+    }
+  
+    .social-media a {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+  }
+  

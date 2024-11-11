@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cahaya Laundry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <style>
+    .navbar-custom {
+      background-color: #FFF0F3;
+      height: 70px;
+    }
+    .text-ungu {
+      color: #6D4C6C;
+    }
+    .nav-item {
+      height: 100%;
+    }
+    .nav-link {
+      color: #6D4C6C;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      transition: background-color 0.3s;
+    }
+    .nav-link:hover {
+      background-color: #6D4C6C;
+      color: white !important;
+    }
+    .nav-link.active {
+      color: white !important;
+      background-color: #6D4C6C !important;
+    }
+    .btn-order {
+      background-color: #6D4C6C;
+      color: white;
+    }
+    .btn-order:hover {
+      background-color: #6D4C6C;
+      color: white;
+    }
+    .product-section {
+      background-color: #FFF0F3;
+      padding: 3rem 0;
+    }
+    .feature-icon img {
+      width: 48px;
+      height: 48px;
+    }
+    .feature-title {
+      color: #6D4C6C;
+    }
+    .custom-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FF69B4;
+      font-size: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .custom-divider::before,
+    .custom-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #6D4C6C;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<link rel="stylesheet" href="responsive.css">
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a href="/" class="navbar-brand d-flex align-items-center">
+          <img class="me-2" width="48" height="48" src="asset/icon/washing-machine.png" alt="Logo">
+          <span class="fs-4 text-orange"><b>Cahaya Laundry</b></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page"><b>HOME</b></a></li>
+            <li class="nav-item"><a href="layanan.html" class="nav-link"><b>LAYANAN</b></a></li>
+            <li class="nav-item"><a href="harga.html" class="nav-link"><b>DAFTAR HARGA</b></a></li>
+            <li class="nav-item"><a href="tentang.html" class="nav-link"><b>TENTANG</b></a></li>
+            <li class="nav-item"><a href="galeri.html" class="nav-link"><b>GALERI</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="asset/slider/1.jpg" class="d-block w-100" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="d-flex align-items-center justify-content-end">
+              <img src="asset/icon/delivery-man.png" alt="Vehicle" width="120" height="100" class="me-3">
+              <div class="text-end">
+                <h1><b>Antar Jemput</b></h1>
+                <h5>Langsung door to door untuk daerah Kecamatan Kalipucang</h5>
+                <a href="https://wa.me/6281285037772" target="_blank" class="btn btn-order">Order Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="asset/slider/2.jpeg" class="d-block w-100" alt="Slide 2">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="product-section">
+      <div class="container">
+        <h2 class="text-center text-ungu"><b> Jasa Laundry Kami</b></h2>
+        <div class="custom-divider"><span>★</span></div>
+        <div class="row g-4 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+              <img src="asset/icon/weighing-machine.png" alt="Weighing Machine">
+            </div>
+            <h3 class="fs-2 feature-title">Laundry Kiloan</h3>
+            <p>Jasa laundry baju kiloan di Kalipucang dan sekitarnya, cocok untuk pakaian sehari-hari. Sudah termasuk cuci, gosok dan lipat. Bisa antar-jemput.</p>
+          </div>
+          
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+              <img src="asset/icon/tshirt.png" alt="T-Shirt">
+            </div>
+            <h3 class="fs-2 feature-title">Laundry Satuan</h3>
+            <p>Jasa laundry satuan seperti kemeja, jas dll. Sangat cocok untuk pakaian spesial Anda. Pengerjaan yang detail, bersih, dengan harga terjangkau.</p>
+          </div>
+          
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+              <img src="asset/icon/iron.png" alt="Iron">
+            </div>
+            <h3 class="fs-2 feature-title">Laundry Setrika</h3>
+            <p>Layanan setrika profesional untuk semua jenis pakaian Anda. Kami menjamin hasil yang rapi, halus, dan siap pakai, sehingga Anda bisa tampil percaya diri tanpa repot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-section">
+      <div class="container">
+        <h2 class="text-center text-ungu"><b>Layanan Tambahan Kami</b></h2>
+        <div class="custom-divider"><span>★</span></div>
+        <div class="row g-4 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+              <img src="asset/icon/school-bag.png" alt="School Bag">
+            </div>
+            <h3 class="fs-2 feature-title">Laundry Tas</h3>
+            <p>Layanan laundry khusus untuk tas Anda. Kami membersihkan interior dan eksterior tas dengan perhatian detail, menjaga agar tas tetap terlihat baru dan terawat. Cocok untuk semua jenis tas.</p>
+          </div>
+          
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+              <img src="asset/icon/sneakers.png" alt="Sneakers">
+            </div>
+            <h3 class="fs-2 feature-title">Laundry Sepatu</h3>
+            <p>Layanan Laundry Sepatu kami menawarkan pembersihan menyeluruh untuk semua jenis sepatu. Kami menggunakan teknik pembersihan yang lembut namun efektif, serta produk ramah lingkungan yang aman untuk semua bahan.</p>
+          </div>
+          
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+              <img src="asset/icon/doll.png" alt="Doll">
+            </div>
+            <h3 class="fs-2 feature-title">Laundry Boneka</h3>
+            <p>Kami menawarkan layanan pembersihan boneka dengan metode yang aman dan lembut. Cocok untuk semua jenis boneka, termasuk boneka kain, boneka plush, dan boneka berisi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="text-center text-white" style="background-color: #6D4C6C;">
+    <div class="container py-4">
+      <section class="mb-4">
+        <a href="https://www.facebook.com/share/pZ81UCW3hyEafMhQ/" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/laundry.cahaya_?igsh=MzM1cDVuYmp4Y3d2" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/6281285037772" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-whatsapp"></i></a>
+      </section>
+      <section class="mb-4">
+        <h5 class="text-uppercase" style="color: #FFF; font-family: 'Baloo 2', sans-serif; font-size: 2.5rem;">Cahaya Laundry</h5>
+        <p>Layanan laundry profesional untuk Kalipucang dan sekitarnya. Kami melayani dengan sepenuh hati untuk memberikan hasil terbaik bagi Anda.</p>
+      </section>
+      <section class="text-white">
+        <p><i class="fas fa-phone-alt"></i> Telepon: +62 812 8503 7772</p>
+        <p><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Kalipucang Raya, Kalipucang</p>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: #5A3E4A;">
+      © 2024 Cahaya Laundry. All Rights Reserved.
+    </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

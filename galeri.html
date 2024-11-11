@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cahaya Laundry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    .navbar-custom {
+      background-color: #FFF0F3;
+      height: 70px;
+    }
+    .text-ungu {
+      color: #6D4C6C; 
+    }
+    .nav-item {
+      height: 100%;
+    }
+    .nav-link {
+      color: #6D4C6C;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      transition: background-color 0.3s;
+    }
+    .nav-link:hover, .nav-link.active {
+      background-color: #6D4C6C;
+      color: white !important;
+    }
+
+    .btn-order {
+      background-color: #6D4C6C;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .btn-order:hover {
+      background-color: #5A3E4A;
+    }
+
+    .product-section {
+      background-color: #FFF0F3;
+      padding: 3rem 0;
+    }
+
+    .card-img-top {
+      transition: transform 0.3s;
+    }
+    .card:hover .card-img-top {
+      transform: scale(1.05);
+    }
+    .feature-title {
+      color: #6D4C6C;
+    }
+
+    .custom-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FF69B4;
+      font-size: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .custom-divider::before,
+    .custom-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #6D4C6C;
+      margin: 0 0.5rem;
+    }
+
+    footer {
+      background-color: #6D4C6C;
+      color: white;
+      font-family: 'Baloo 2', sans-serif;
+    }
+    .footer-bottom {
+      background-color: #5A3E4A;
+      color: white;
+    }
+  </style>
+</head>
+<link rel="stylesheet" href="responsive.css">
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img class="me-2" width="48" height="48" src="asset/icon/washing-machine.png" alt="Logo">
+        <span class="fs-4 text-orange"><b>Cahaya Laundry</b></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link"><b>HOME</b></a></li>
+          <li class="nav-item"><a href="layanan.html" class="nav-link"><b>LAYANAN</b></a></li>
+          <li class="nav-item"><a href="daftar-harga.html" class="nav-link"><b>DAFTAR HARGA</b></a></li>
+          <li class="nav-item"><a href="tentang.html" class="nav-link"><b>TENTANG</b></a></li>
+          <li class="nav-item"><a href="galeri.html" class="nav-link"><b>GALERI</b></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <section class="product-section text-center">
+    <div class="container">
+      <h2 class="text-center text-ungu mb-4"><b>Galeri Pembuat Website</b></h2>
+      <div class="custom-divider">★</div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="asset/isi daftar harga/foto hanif.jpg" class="card-img-top" alt="Hanif - Web Developer">
+            <div class="card-body">
+              <h5 class="card-title"><b>Hanifah Cahaya Kholifah- Fungsionalitas dan Responsivitas</b></h5>
+              <p class="card-text">Mengimplementasikan fungsionalitas utama, memastikan semua fitur berjalan baik di berbagai perangkat. <br><br> Menyesuaikan elemen tampilan agar responsif dan bisa diakses di berbagai ukuran layar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="asset/isi daftar harga/foto nadin.jpg" class="card-img-top" alt="Nadin - Designer">
+            <div class="card-body">
+              <h5 class="card-title"><b>Nadin Nadiati - Perencanaan dan Desain Tampilan</b></h5>
+              <p class="card-text">Fokus pada menyusun konsep, membuat rencana proyek, dan mendesain tata letak visual. <br><br> Menyiapkan elemen desain seperti warna, font, dan gambar agar tampilannya sesuai dengan tema dan fungsionalitas website.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="asset/isi daftar harga/nanas.jpg" class="card-img-top" alt="Nanas - Content Creator">
+            <div class="card-body">
+              <h5 class="card-title"><b>Nania Aprilianti - Kreativitas & Inovasi</b></h5>
+              <p class="card-text">Menciptakan inovasi dan menambahkan fitur tambahan yang menarik untuk meningkatkan user experience.<br><br> Menyertakan elemen unik dan kreatif, serta menambahkan pembuatan media sosial "Laundry Cahaya"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <footer class="text-center text-white" style="background-color: #6D4C6C;">
+    <div class="container py-4">
+      <section class="mb-4">
+        <a href="https://www.facebook.com/share/pZ81UCW3hyEafMhQ/" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/laundry.cahaya_?igsh=MzM1cDVuYmp4Y3d2" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/6281285037772" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-whatsapp"></i></a>
+      </section>
+      <section class="mb-4">
+        <h5 class="text-uppercase" style="color: #FFF; font-family: 'Baloo 2', sans-serif; font-size: 2.5rem;">Cahaya Laundry</h5>
+        <p>Layanan laundry profesional untuk Kalipucang dan sekitarnya. Kami melayani dengan sepenuh hati untuk memberikan hasil terbaik bagi Anda.</p>
+      </section>
+      <section class="text-white">
+        <p><i class="fas fa-phone-alt"></i> Telepon: +62 812 8503 7772</p>
+        <p><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Kalipucang Raya, Kalipucang</p>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: #5A3E4A;">
+      © 2024 Cahaya Laundry. All Rights Reserved.
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
